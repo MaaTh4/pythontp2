@@ -1,0 +1,39 @@
+#Exercicio 1
+def ex1():
+    start = 1
+    end = 50
+
+    for num in range(start,end + 1):
+        if num % 2 != 0:
+            print(num, end = " ")
+        
+ex1()
+
+#Exercicio 2
+def ex2():
+    populacaoA = 80000
+    taxaCrescimentoA = 0.03
+    populacaoB = 200000
+    taxaCrescimentoB = 0.015
+    anos = 1
+
+    while populacaoA < populacaoB: 
+        populacaoA *= 1 + taxaCrescimentoA
+        populacaoB *= 1 + taxaCrescimentoB
+        anos += 1
+    
+    print('População A: ', populacaoA)
+    print('População B: ', populacaoB)
+    print('Levará ', anos, ' anos para a população A ultrapassar a B')
+    
+ex2()
+
+#Exercicio 3 corrirgir
+def ex3():
+    print("Escreva uma sequência de números separados por vírgula")
+    nums = input()
+    listaNums = []
+    listaNums.append(nums)
+    print(listaNums)
+    
+ex3()
